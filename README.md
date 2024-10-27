@@ -8,7 +8,18 @@ This repository aims to provide useful examples and hands-on exercises for devel
 Each folder contains a README specific to the example, detailing the project, the hardware setup, and instructions on how to compile and run the code.
 
 # Projects
-TBS
+
+### 1\. ADC with DMA Example for STM32
+
+This example demonstrates how to use the ADC with Direct Memory Access (DMA) on an STM32 microcontroller to read analog inputs on GPIO pins PA1 and PA4. The DMA transfers ADC values directly to memory, allowing for efficient, low-overhead data acquisition.
+
+-   **File**: `projects/stm32/stm32f411-adc-dma`
+-   **Main Features**:
+    -   Configures PA1 and PA4 as analog inputs
+    -   Sets up ADC for continuous conversion in scan mode
+    -   Uses DMA to automatically transfer ADC values to memory
+-   **Relevant Peripherals**: GPIO, ADC, DMA
+-   **Target Microcontroller**: STM32F4 series
 
 # Contributing
 
